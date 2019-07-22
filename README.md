@@ -75,13 +75,13 @@ void setHoverboardPWM( int32_t pwm1, int32_t pwm2 )
 }
 ```
 This code is only able to write values to the board, replies can not be parsed. For more information check the [hoverboard protocol wiki](https://github.com/bipropellant/bipropellant-protocol/wiki) and [examples](https://github.com/bipropellant/bipropellant-protocol/tree/master/examples).
-An Arduino compatible C++ module which can communicate in both directions can be found at [bipropellant-hoverboard-api](https://github.com/bipropellant/bipropellant-hoverboard-api).
+Совместимый с Arduino модуль C++, который может взаимодействовать в обоих направлениях, можно найти по адресу [bipropellant-hoverboard-api](https://github.com/bipropellant/bipropellant-hoverboard-api).
 
 ### PID Control:
-PID control loops for control of Speed (in mm/sec) and Position (in mm).  Currently separate control modes, and parameter need better tuning.
+Контуры управления ПИД для контроля скорости (в мм/сек) и положения (в мм).  В настоящее время отдельные режимы управления и параметры нуждаются в настройке.
 
 ### Hall Interupts:
-Used to read Position and Speed data.
+Используется для чтения данных о положении и скорости.
 
 ### Flash settings:
 Implements a flash page available for efficitent storage of parameters (currently unused, but tested).
@@ -94,8 +94,8 @@ Multiple inputs like Joystick, speed throttle and Gametrak can be easily configu
 # Hardware
 ![Motherboard](.github/pinout.png)
 
-The original Hardware supports two 4-pin cables that originally were connected to the two sensor boards. They break out GND, 12/15V and USART2&3 of the Hoverboard mainboard.
-Both USART2 & 3 can be used for UART and I2C, PA2&3 can be used as 12bit ADCs.
+Оригинальное оборудование поддерживает два 4-контактных кабеля, которые первоначально были подключены к двум сенсорным платам. Они ломают вне GND, 12 / 15V и USART2&3 mainboard Hoverboard.
+И USART2 & 3 можно использовать для UART и I2C, PA 2&3 можно использовать как АЦП 12 битов.
 
 The reverse-engineered schematics of the mainboard can be found here:
 http://vocke.tv/lib/exe/fetch.php?media=20150722_hoverboard_sch.pdf
