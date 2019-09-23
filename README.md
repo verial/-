@@ -17,10 +17,10 @@ It branched from Niklas Fauth's hoverboard firmware at this commit: [Aug 24, 201
 # Added:
 
 ### Software serial:
-This allows you to use ANY GPIO pins (with modififcation) as serial.  Probably best to stay at 9600 baud, as the receive interrupt is serviced at 8x the bitrate.
+Это позволяет использовать любые контакты GPIO (с модификацией) в качестве последовательных.  Вероятно, лучше всего оставаться на 9600 бод, так как прерывание приема обслуживается с 8-кратным битрейтом.
 
 ### Sensor reading:
-It reads the original serial data (9 bit) from the original sensor boards from USART2&3.
+Он читает первоначально серийные данные (бит 9)от первоначально доск датчика от USART2&3.
 
 ### Sensor control:
 Sensor data can control the PWM demands (power to the wheels).  Double tap on pads to enable.
