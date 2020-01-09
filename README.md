@@ -22,7 +22,7 @@ It branched from Niklas Fauth's hoverboard firmware at this commit: [Aug 24, 201
 ### Sensor reading:
 Он читает первоначально серийные данные (бит 9)от первоначально доск датчика от USART2&3.
 
-### Sensor control:
+### Подключение к датчикам:
 Sensor data can control the PWM demands (power to the wheels).  Double tap on pads to enable.
 
 ### Serial diagnostic control:
